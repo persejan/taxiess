@@ -12,6 +12,7 @@ var taxiRoutes = require("./routes/taxies");
 
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/taxiess", {useMongoClient: true});
+mongoose.connect("mongodb://jan:pass@ds251827.mlab.com:51827/taxiess", {useMongoClient: true});
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + "/public"));
