@@ -1,0 +1,140 @@
+/* From 1024-1200px */
+@media only screen and (max-width: 1200px) {
+    .imeLastnostiZgodovina {
+        font-size: 0.6em;
+    }
+    
+    .lastnostZgodovina {
+        font-size: 0.8em;
+    }
+}
+
+/* From 768-1023px */
+@media only screen and (max-width: 1023px) {
+    nav {
+        width: 80%;
+        justify-content: space-around;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .naslovnica {
+        height: 50vh;
+        padding-top: 15vh;
+    }
+    .cards {
+        width: 45%;
+    }
+    .gumb {
+        font-size: 0.8em;
+    }
+    .navbarLogo {
+        width: 45px;
+    }
+    .navbarHome {
+        font-size: 0.8em;
+    }
+    .navbarTaksiji {
+        font-size: 0.8em;
+    }
+    input {
+        width: 500px;
+        height: 45px;
+        font-size: 1.2em;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 0.8em;
+    }
+    .gumbNazajNajem {
+        padding: 15px;
+    }
+    .gumbNajem {
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    .naslovnicaPregled {
+        height: 30vh;
+        padding-top: 15vh;
+    }
+    .zgodovinaCard {
+        width: 49%;
+    }
+}
+
+/* From 481-767px */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    .naslovnica {
+        height: 45vh;
+    }
+    .cards {
+        width: 100%;
+    }
+    .gumb {
+        font-size: 0.7em;
+        padding: 10px 20px;
+    }
+    .sectionHead {
+        height: 120px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .naslovnicaPregled {
+        height: 30vh;
+        padding-top: 15vh;
+    }
+    .gumbNakup {
+        margin-bottom: 15px;
+    }
+    .logoImg {
+        width: 70px;
+    }
+    .pregledLastnosti {
+        flex-direction: column;
+    }
+    input {
+        width: 300px;
+        font-size: 1em;
+    }
+    .gumbNajem {
+        width: 300px;
+        font-size: 0.8em;
+    }
+}
+
+/* From 0-480px */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    .logoImg {
+        width: 60px;
+    }
+    .naslovnica {
+        height: 40vh;
+    }
+    .zgodovinaCard {
+        width: 100%;
+        padding: 0;
+    }
+}

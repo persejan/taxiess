@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+<div class="height">
+    <div class="naslovnicaPregled">
+        <h3>NAJEM TAKSIJA</h3>
+    </div>
+
+    <div class="container">
+
+        <form action="/<%= taxi._id %>/rents" method="POST">
+            <input type="text" name="rent[ime]" placeholder="ime" required>
+            <input type="text" name="rent[priimek]" placeholder="priimek" required>
+            <input type="number" name="rent[dolzinaNajema]" placeholder="dolžina najema v sek" required>
+            <button class="gumb gumbNajem">Najemi taksi</button>
+            <a class="gumb gumbNazajNajem" href="/<%= taxi._id %>">Nazaj</a>
+        </form>
+
+    </div>
+</div>
+
+<% include ../partials/footer %>

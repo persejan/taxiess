@@ -1,0 +1,70 @@
+<% include ../partials/header %>
+
+<div class="naslovnicaPregled">
+    <h3>PREGLED VOZILA</h3>
+</div>
+
+<div class="container">
+    <div class="shadowBox">
+        <div class="pregledSlika">
+            <img src="<%= taxi.slika %>"></img>
+        </div>
+        <div class="pregledLastnostiDiv">
+            <ul class="pregledLastnosti">
+                <li>
+                    <div class="lastnost"> <%= taxi.letnik %></div> <hr>
+                    <div class="imeLastnosti">Letnik</div>
+                    
+                </li>
+                <li>
+                    <div class="lastnost"> <%= taxi.maxPotnikov %></div> <hr>
+                    <div class="imeLastnosti">Število potnikov</div>
+                </li>
+                <li>
+                    <div class="lastnost"> <%= taxi.maxHitrost %></div> <hr>
+                    <div class="imeLastnosti">Hitrost (km/h)</div>
+                    
+                </li>
+            </ul>
+        </div>
+        <hr class="hrShow">
+        <div class="gumbDiv">
+            <a class="gumb gumbNajemShow" href="/<%= taxi._id %>/rents/new">Najem taksija</a>
+            <a href="/" class="gumb gumbNazaj">Nazaj</a>
+        </div>
+    </div>
+
+    <div class="zgodovina">
+        <div class="zgodovinaTitle">
+            <h2>ZGODOVINA NAJEMOV</h2>
+        </div>
+        <div class="allCards">
+            <% taxi.rents.forEach(function(rent) { %>
+                <div class="zgodovinaCard">
+                    <ul class="pregledLastnosti">
+                        <li>
+                            <div class="lastnostZgodovina"><%= rent.ime %></div> <hr>
+                            <div class="imeLastnostiZgodovina">Ime</div>
+                        </li>
+                        <li>
+                            
+                            <div class="lastnostZgodovina"><%= rent.priimek %></div> <hr>
+                            <div class="imeLastnostiZgodovina">Priimek</div>
+                        </li>
+                        <li>
+                            <div class="lastnostZgodovina"><%= rent.dolzinaNajema %> sek</div> <hr>
+                            <div class="imeLastnostiZgodovina">Dolžina najema</div>
+                        </li>
+                        <!-- <li>
+                            <form action="/<%= rent._id %>/rents/<%= rent._id %>?_method=DELETE" method="POST">
+                                <input type="submit" value="Preklic najema" class="gumb gumbPreklic">
+                            </form>
+                        </li> -->
+                    </ul>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

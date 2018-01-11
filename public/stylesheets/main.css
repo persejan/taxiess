@@ -1,0 +1,436 @@
+/* SETUP */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(236, 240, 241,1.0);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    height: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: 40px auto;
+}
+
+.gumb {
+    text-decoration: none;
+    color: white;
+    border: none;
+    font-size: 0.8em;
+    padding: 20px 40px;
+    background-color: rgba(44, 62, 80,1.0);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    transition: background-color 0.2s;
+}
+
+.gumb:hover {
+    background-color: rgba(44, 62, 80, 0.8);
+}
+
+.material-icons {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    margin: 0;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 15px;
+}
+
+h2 {
+    color: rgba(44, 62, 80,1.0);
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    box-shadow: 0 1px 20px rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(52, 73, 94, 0.9), rgba(44, 62, 80,1.0));
+}
+
+nav {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeDiv {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-out;
+}
+
+.homeDiv:hover {
+    transform: translateY(-2px);
+}
+
+.carDiv {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-out;
+    cursor: pointer;
+}
+
+.carDiv:hover {
+    transform: translateY(-2px);
+}
+
+.navbarLogo {
+    width: 50px;
+    padding: 5px;
+}
+
+.navbarHome {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+.navbarTaksiji {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+/* HEADER */
+
+.logoImg {
+    width: 90px;
+}
+
+.naslovnica {
+    background-color: rgba(44, 62, 80,1.0);
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    color: white;
+    padding-top: 20vh;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+/* TAXI SECTION */
+
+.sectionHead {
+    background-color: white;
+    height: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* TAXI CARDS */
+
+.slika {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s ease-out;
+}
+
+.slika:hover {
+    transform: scale(1.02);
+}
+
+.slikaDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slikaDiv img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.sectionCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1em;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 20px;
+    margin: 9px;
+    border: 0;
+    height: 1px;
+    background-color: rgba(179, 179, 179, 0.4);
+}
+
+.lastnost {
+    font-size: 1.5em;
+    color: rgba(44, 62, 80,1.0);
+}
+
+.imeLastnosti {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgba(241, 196, 15,1.0);
+}
+
+.gumbVec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(241, 196, 15,1.0);
+}
+
+/* PREGLED SECTION */
+
+.naslovnicaPregled {
+    background-color: rgba(44, 62, 80,1.0);
+    height: 30vh;
+    text-align: center;
+    padding-top: 15vh;
+    margin-bottom: 40px;
+}
+
+.pregledSlika {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: -4px;
+}
+
+.pregledSlika img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    transform: scale(1.01);
+    transition: transform 0.5s ease-out;
+}
+
+.pregledSlika img:hover {
+    transform: scale(1);
+}
+
+.pregledLastnostiDiv {
+    background-color: white;
+    margin-bottom: -3px;
+}
+
+.pregledLastnosti {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.gumbDiv {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.gumbNajemShow {
+    background-color: #f1c40f;
+}
+
+.gumbNajemShow:hover {
+    background-color: #f5d44f;
+}
+
+.shadowBox {
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.hrShow {
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    height: 3px;
+    background-color: rgba(179, 179, 179, 0.2);
+}
+
+.zgodovinaTitle {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.zgodovinaCard {
+    width: 33%;
+    color: white;
+    background-color: rgba(44, 62, 80,1.0);
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
+
+.zgodovinaCard:hover {
+    transform: translateY(-2px);
+}
+
+.imeLastnostiZgodovina {
+    font-size: 0.7em;
+    color: rgba(241, 196, 15,1.0);
+}
+
+.lastnostZgodovina {
+    font-size: 1em;
+}
+
+/* .gumbPreklic {
+    width: 100%;
+} */
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: rgba(52, 73, 94,1.0);
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 0.8em;
+}
+
+/* --------------------------------------------------------- */
+/*                       NAKUP NOVEGA                        */
+/* --------------------------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    margin: 10px auto;
+    border: transparent;
+    background-color: rgba(52, 73, 94,1.0);
+    text-align:center;
+    font-size: 1.2em;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.gumbNakup {
+    background-color: rgba(241, 196, 15, 1.0);
+}
+
+.gumbNakup:hover {
+    background-color: #f5d44f;
+}
+
+/* --------------------------------------------------------- */
+/*                       NAJEM NOVEGA                        */
+/* --------------------------------------------------------- */
+
+.gumbNajem {
+    background-color: rgba(241, 196, 15, 1.0);
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+
+.gumbNajem:hover {
+    background-color: rgba(241, 196, 15, 0.6);
+}
+
+.gumbNazajNajem {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.height {
+    height: 100vh;
+    margin-bottom: -99px;
+}

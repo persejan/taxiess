@@ -1,0 +1,48 @@
+<% include ../partials/header %>
+
+    <div class="naslovnica">
+        <img class="logoImg" src="img/logoWhite.png">
+        <h1>TAXIESS</h1>
+    </div>
+
+<section class="container scroll">
+    <div class="sectionHead">
+        <div>
+            <h2>PREGLED TAKSIJEV</h2>
+        </div>
+        <div class="gumbNakup" >
+            <a class="gumb gumbNakup" href="/new">NAKUP NOVEGA</a>
+        </div>
+    </div>
+    <div class="sectionCards">
+        <% taxies.forEach(function(taxi) { %>
+            <div class="cards">
+                <div class="slikaDiv">
+                    <a href="/<%= taxi._id %>"><img class="slika" src="<%= taxi.slika %>"></img></a>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <div class="lastnost"> <%= taxi.letnik %></div> <hr>
+                            <div class="imeLastnosti">Letnik</div>
+                            
+                        </li>
+                        <li>
+                            <div class="lastnost"> <%= taxi.maxPotnikov %></div> <hr>
+                            <div class="imeLastnosti">Število potnikov</div>
+                        </li>
+                        <li>
+                            <div class="lastnost"> <%= taxi.maxHitrost %></div> <hr>
+                            <div class="imeLastnosti">Hitrost (km/h)</div>
+                            
+                        </li>
+                    </ul>
+                    <div class="gumbVecDiv"><a href="/<%= taxi._id %>" class="gumb gumbVec">VEČ</a></div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+</section>
+
+<% include ../partials/footer %>
