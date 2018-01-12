@@ -128,7 +128,7 @@ nav {
 /* HEADER */
 
 .logoImg {
-    width: 90px;
+    width: 80px;
 }
 
 .naslovnica {
@@ -386,7 +386,7 @@ form {
 input {
     width: 500px;
     height: 50px;
-    margin: 10px auto;
+    margin: 3px auto;
     border: transparent;
     background-color: rgba(52, 73, 94,1.0);
     text-align:center;
@@ -413,8 +413,7 @@ input {
 .gumbNajem {
     background-color: rgba(241, 196, 15, 1.0);
     width: 500px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 3px auto;
     letter-spacing: 2px;
     font-size: 1.2em;
 }
@@ -425,7 +424,7 @@ input {
 
 .gumbNazajNajem {
     width: 100px;
-    margin: 0 auto;
+    margin: 3px auto;
     text-align: center;
     padding: 20px;
 }

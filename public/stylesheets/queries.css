@@ -28,6 +28,9 @@
         height: 50vh;
         padding-top: 15vh;
     }
+    .logoImg {
+        width: 60px;
+    }
     .cards {
         width: 45%;
     }
@@ -55,8 +58,7 @@
         padding: 15px;
     }
     .gumbNajem {
-        margin-bottom: 20px;
-        font-size: 1em;
+        height: 50px;
     }
     .naslovnicaPregled {
         height: 30vh;
@@ -101,7 +103,10 @@
         margin-bottom: 15px;
     }
     .logoImg {
-        width: 70px;
+        width: 50px;
+    }
+    .navbar {
+        height: 40px;
     }
     .pregledLastnosti {
         flex-direction: column;
@@ -112,7 +117,6 @@
     }
     .gumbNajem {
         width: 300px;
-        font-size: 0.8em;
     }
 }
 
@@ -136,5 +140,8 @@
     .zgodovinaCard {
         width: 100%;
         padding: 0;
+    }
+    .navbar {
+        height: 30px;
     }
 }
